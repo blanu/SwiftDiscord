@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.2
 
 // The MIT License (MIT)
 // Copyright (c) 2016 Erik Little
@@ -28,7 +28,7 @@ var deps: [Package.Dependency] = [
 var targetDeps: [Target.Dependency] = ["DiscordOpus", "WebSockets"]
 
 #if !os(Linux)
-deps += [.package(url: "https://github.com/daltoniam/Starscream", .upToNextMinor(from: "3.0.0")),]
+deps += [.package(url: "https://github.com/daltoniam/Starscream", .upToNextMinor(from: "4.0.4")),]
 targetDeps += ["Starscream"]
 #endif
 
