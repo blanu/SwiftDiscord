@@ -28,7 +28,7 @@ var deps: [Package.Dependency] = [
 var targetDeps: [Target.Dependency] = ["DiscordOpus", "WebSockets"]
 
 #if !os(Linux)
-deps += [.package(url: "https://github.com/daltoniam/Starscream", .upToNextMinor(from: "4.0.4")),]
+deps += [.package(url: "https://github.com/blanu/Starscream", .upToNextMinor(from: "4.0.4")),]
 targetDeps += ["Starscream"]
 #endif
 
